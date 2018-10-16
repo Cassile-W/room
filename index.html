@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器 - LZW</title>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/lyric.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="music_area">
+<div class="header">
+    <h1 class="logo"><a href="#"></a></h1>
+    <ul class="register">
+        <li>登录</li>
+        <li>设置</li>
+    </ul>
+</div>
+<!--中间内容 -->
+<div class="content">
+    <div class="content_in">
+        <!--左边内容 -->
+        <div class="content_left">
+            <div class="song_info">
+                <a href="javascript:;" class="song_info_pic"></a>
+
+                <div class="song_info_name">歌曲名:
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="song_info_singer">歌手名:
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="song_info_ablum">专辑名:
+                    <a href="javascript:;"></a>
+                </div>
+
+                <div class="content_toolbar">
+                    <span class="collect"><i></i>收藏</span>
+                    <span class="load"><i></i>下载</span>
+                </div>
+            </div>
+
+            <div class="song_lyric_container">
+                <ul class="song_lyric">
+                </ul>
+            </div>
+    </div>
+        <!--右边内容 -->
+        <div class="content_right">
+            <!--<div class="content_toolbar">-->
+
+                <!--<span><i></i>添加到</span>-->
+
+                <!--<span><i></i>删除</span>-->
+                <!--<span><i></i>清空列表</span>-->
+            <!--</div>-->
+            <div class="content_list" data-mcs-theme="minimal-dark">
+                <ul>
+                    <li class="list_title">
+                        <div class="list_check"><i></i></div>
+                        <div class="list_number"></div>
+                        <div class="list_name">歌曲</div>
+                        <div class="list_singer">歌手</div>
+                        <div class="list_time">时长</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <div class="tab_top">
+            <ul class="top">
+                <li class="current"><a href="javascript:;" >推荐MV</a></li>
+                <li><a href="javascript:;" >精选专栏</a></li>
+                <li><a href="javascript:;" >主播电台</a></li>
+            </ul>
+
+        </div>
+       <div class="tab_content">
+           <div class="content_mv" style="display: block">
+           <ul class="mv">
+               <!--<span class="icon"></span>-->
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           </ul>
+           </div>
+           <div class="content_zl">
+               <ul class="zl">
+                   <li><p>在蓬莱追不上她改变的速度</p></li>
+                   <li><p>炫舞时代三周年主题曲</p></li>
+                   <li><p>全新现象级情歌</p></li>
+               </ul>
+           </div>
+           <div class="content_dt"></div>
+       </div>
+
+</div>
+    </div>
+     <div class="footer">
+
+         <!--进度条区-->
+            <div class="music_progress_bar">
+                <div class="music_progress_line">
+                    <div class="music_progress_dot"></div>
+                </div>
+            </div>
+
+            <div class="footer_in">
+            <!-- 信息条-->
+                <div class="music_progress_info">
+                    <a href="javascript:;" class="photo"></a>
+                <span class="music_progress_name"></span>
+             </div>
+
+          <!-- 控制图标-->
+         <div class="control">
+             <a href="javascript:;" class="music_mode"></a>
+             <a href="javascript:;" class="music_pre"></a>
+             <a href="javascript:;" class="music_play"></a>
+             <a href="javascript:;" class="music_next"></a>
+             <a href="javascript:;" class="music_mode3"></a>
+         </div>
+                <!-- 控制音量-->
+        <div class="music_voice_info">
+            <a href="javascript:;" class="music_voice_icon"></a>
+            <div class="music_voice_bar">
+                <div class="music_voice_line">
+                    <div class="music_voice_dot"></div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+       </div>
+    </div>
+
+<div class="mask_bg"></div>
+<div class="mask"></div>
+<audio src=""></audio>
+</body>
+</html>
